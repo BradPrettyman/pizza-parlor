@@ -24,3 +24,17 @@ Pizza.prototype.toppings = function() {
   let toppingsPrice = 0
 
   if (this.toppings === 4) {
+    this.toppingsPrice += 4;
+  } else if (this.toppings === 3) {
+    this.toppingsPrice += 3;
+  } else if (this.toppings === 2) {
+    this.toppingsPrice += 2;
+  } else if (this.toppings === 1) {
+    this.toppingsPrice += 1;
+  }
+  this.toppingsPrice = toppingsPrice;
+}
+
+Pizza.prototype.calculatePrice = function(size, toppings) {
+  let pizzaPrice = size + toppings
+}
