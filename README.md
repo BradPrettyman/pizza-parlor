@@ -19,3 +19,14 @@ Expected Result: price +=1 for each toppings
 Test: Pizza prototype for total cost
 Code: Pizza.prototype.calculatePrice = function()
 Expected result: sizePrice + toppings =total price
+
+
+<!-- Describe: Order Constructor (used if we have multiple pizzas to order, but not there yet)
+
+Test: Constructor for Pizza Order
+Code: function PizzaOrder()
+Expected Result: order; undefined
+
+Test: ID to pizza order
+Code: assignID()
+Expected Result: order[1] -->
