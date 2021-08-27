@@ -19,3 +19,8 @@ Pizza.prototype.size = function() {
   }
   this.sizePrice = sizePrice;
 }
+
+Pizza.prototype.toppings = function() {
+  let toppingsPrice = 0
+
+  if (this.toppings === 4) {
