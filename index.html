@@ -7,3 +7,45 @@
   <script src='js/jquery.js'></script>
   <script src="js/scripts.js"></script>
 </head>
+<body>
+  <div class="container">
+    <h1>Pizza Parlor!</h1>
+    <hr>
+    <div class="form-group">
+      <label for="order-name">Name for Order:</label>
+      <input type="text" class="form-control" id="order-name">
+      <button type="submit" class="btn btn-success">Start Order!</button>
+      <form id="group1" name="pizza">
+        <label for="pizzaSize">Pick your size of Pizza:</label>
+        <select class="form-control" id="size">
+          <option>Pick a Size</option>
+          <option value="small">Small $8</option>
+          <option value="medium">Medium $10</option>
+          <option value="large">Large $12</option>
+        </select>
+        <div class="toppings  form-group">
+          <label for="toppings">Pick your Toppings (+$1 each):</label>
+          <hr>
+          <label class="checkbox-inline">
+            <input type="checkbox" name="toppings" value="">Pepperoni
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" name="toppings" value="">Sausage
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" name="toppings" value="">Ham
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" name="toppings" value="">Mushrooms
+          </label>
+        </div>
+        <button type="submit" class="btn btn-success">Add Pizza!</button>
+      </form>
+    </div>
+    <div class='total-price-of-pizza'>
+    <label for="price">Price of Pizza:<span id='total-price'></span></label>
+    </div>
+  </div>
+</body>
+
+</html>
