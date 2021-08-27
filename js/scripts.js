@@ -39,3 +39,18 @@ Pizza.prototype.calculatePrice = function(size, toppings) {
   let pizzaPrice = size + toppings;
   return pizzaPrice
 }
+
+// UI Logic
+
+$(document).ready(function() {
+  
+  $('#group1').submit(function(event) {
+    event.preventDefault();
+    
+    let pizzaSize = $('#size').val();
+    let pizzaToppings = 0;
+    for (let i=0; i < document.pizza.topping ; i++) {
+      if (document.pizza.topping[i].checked==true){
+        pizzaToppings +=1;
+      }
+    }
