@@ -54,3 +54,13 @@ $(document).ready(function() {
         pizzaToppings +=1;
       }
     }
+
+    orderedPizza = new Pizza(pizzaSize, pizzaToppings);
+    
+
+    let priceToppings = orderedPizza.toppings();
+    var priceSize = orderedPizza.size();
+    orderedPizza.calculatePrice(priceToppings, priceSize);
+    $('.total-price-of-pizza').show();
+  })
+});
